@@ -16,7 +16,7 @@
     height: 560px;
     width:380px;
     position: relative;
-    margin: 6% auto;
+    margin: 3% auto;
     background: seashell;
     padding: 5px;
     overflow: hidden;
@@ -51,7 +51,7 @@
 }
 
 .input-group{
-    top:100px;
+    top:70px;
     position: absolute;
     width: 280px;
     transition: 0.5s;
@@ -89,4 +89,9 @@
 }
 #register{
     right: 450px;
+}
+
+.footer{
+    position: absolute;
+    bottom: -200;
 }
