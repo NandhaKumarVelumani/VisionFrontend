@@ -17,7 +17,7 @@
     min-height: 70vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.9)),
-      url(images/background.jpg);
+      url(../background.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -49,7 +49,7 @@
     content: "";
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #FFD700;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -242,7 +242,7 @@
   }
   
   .icons .fa {
-    color: #4aaec0;
+    color: #FFD700;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
