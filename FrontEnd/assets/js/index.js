@@ -2,7 +2,8 @@
 const navLinks = document.getElementById("navLinks");
 const submitBtn = document.querySelector(".btn");
 const allInputs = document.querySelectorAll("input");
-const textarea = document.querySelector("textarea")
+const textarea = document.querySelector("textarea");
+const contentdiv = document.querySelector(".content");
 
 function showMenu() {
     navLinks.style.right = "0";
