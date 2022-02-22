@@ -12,7 +12,7 @@ function hideMenu() {
     navLinks.style.right = "-200px";
 }
 
-submitBtn.addEventListener('click', function(e){
+submitBtn.addEventListener('click', function (e) {
     e.preventDefault()
     allInputs.forEach(inps => {
         inps.value = ''
