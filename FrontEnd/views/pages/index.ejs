@@ -43,26 +43,7 @@
         <div class="bubble"></div>
       </div>
     </section>
-    <header class="header">
-      <nav>
-        <a href="index.html"
-          ><img src="./public/assets/ECEA-gold.png" alt="logo" height="50"
-        /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="workshops.html">WORKSHOPS</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="sponsors.html">SPONSORS</a></li>
-            <li><a href="resonance.html">RESONANCE</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-    </header>
+    <header class="header"><%- include('../partials/navbar'); %></header>
     <div class="mainarea">
       <h2 class="info">
         <span>VISION'22</span><br />27th Inter College Symposium<br />
@@ -388,14 +369,6 @@
       </div>
     </section>
     <!-- footer -->
-    <section class="footer">
-      <p>copyright @2022</p>
-      <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-    </section>
+    <section class="footer"><%- include('../partials/footer'); %></section>
   </body>
 </html>
