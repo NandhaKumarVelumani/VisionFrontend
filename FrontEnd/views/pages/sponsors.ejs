@@ -23,26 +23,7 @@
     <script defer src="./public/assets/js/index.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html"
-          ><img src="./public/assets/ECEA-gold.png" alt="logo" height="70"
-        /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="workshops.html">WORKSHOPS</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="sponsors.html">SPONSORS</a></li>
-            <li><a href="resonance.html">RESONANCE</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-          </ul>
-        </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-    </header>
+    <header><%- include('../partials/navbar'); %></header>
     <div class="container">
       <div id="particles-js"></div>
       <div class="banner"></div>
@@ -191,14 +172,6 @@
         <button class="field btn" type="submit">Submit</button>
       </div>
     </form>
-    <section class="footer">
-      <p>copyright @2022</p>
-      <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-    </section>
+    <section class="footer"><%- include('../partials/footer'); %></section>
   </body>
 </html>
