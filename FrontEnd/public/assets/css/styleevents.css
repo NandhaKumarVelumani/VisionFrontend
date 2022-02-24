@@ -63,10 +63,11 @@ body {
   background: rgb(52, 45, 83);
   min-height: 100vh;
 }
+/*
 .title h2 {
   font-family: "Nunito", sans-serif;
   font-size: 4rem;
-  color: rgb(255, 255, 255);
+  color: #ffd700;
   text-shadow: 2px 2px #000000;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
@@ -74,7 +75,7 @@ body {
   padding: 5px;
   margin-top: 5px;
   text-align: center;
-}
+}*/
 .subtitle {
   padding: 5px;
   margin-top: 10px;
@@ -88,7 +89,7 @@ body {
   animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 .subtitle h3 {
-  color: white;
+  color:#ffd700;
 }
 .container {
   position: relative;
@@ -224,13 +225,20 @@ body {
   width: 100%;
   height: 100%;
   background-size: 300% 300%;
-  background-image: linear-gradient(
+ /* background-image: linear-gradient(
     -45deg,
     rgba(59, 173, 227, 1) 1%,
     rgb(44, 62, 153) 25%,
     rgb(108, 48, 129) 51%,
     rgb(202, 106, 141) 100%
-  );
+  );*/
+  background-image: linear-gradient(
+    -45deg,
+    #000000 1%,
+   #2b2626 25%,
+    #000000 51%,
+    #2b2626  100%
+    );
   animation: AnimateBG 5s ease infinite;
 }
 
@@ -259,4 +267,8 @@ body {
   .container .card:hover {
     opacity: 1;
   }
+}
+.container{
+  width: 30%;
+  height: 30%;
 }
