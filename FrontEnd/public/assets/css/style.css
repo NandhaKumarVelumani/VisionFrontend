@@ -323,6 +323,7 @@ header h1 {
   margin: 10px 0;
 }
 
+
 @media (max-width: 500px) {
   .info {
     text-align: center;
@@ -689,7 +690,8 @@ header h1 {
 }
 
 .yt-video {
-  margin: 50px;
+  margin: 0px;
+  transform: translateY(-70%);
 }
 .video-container {
   display: flex;
