@@ -639,7 +639,7 @@ header h1 {
 
 /* TESTIMONIALS */
 .testimonial {
-  width: 65%;
+  width: 100%;
   position: relative;
   /* background-color: red; */
   height: 50%;
