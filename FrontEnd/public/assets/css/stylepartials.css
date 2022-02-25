@@ -54,7 +54,7 @@ nav .fa {
 }
 @media (max-width: 900px) {
   header {
-    min-height: 200px;
+    min-height: 50px;
   }
   .nav-links ul li {
     display: block;
