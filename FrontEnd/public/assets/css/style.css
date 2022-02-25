@@ -323,6 +323,12 @@ header h1 {
   margin: 10px 0;
 }
 
+@media (max-width: 500px) {
+  .info {
+    text-align: center;
+    padding: 10px 50px;
+  }
+}
 /* ---web and tech cores--- */
 .pics {
   color: #ccc;
@@ -360,7 +366,19 @@ header h1 {
 .card-container {
   padding: 2px 16px;
 }
-
+@media (max-width: 850px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pics h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 550px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 1240px) {
   .mainarea {
     width: 100%;
@@ -547,6 +565,7 @@ header h1 {
 .gallery {
   color: #ffd700;
   margin-top: 10rem;
+  font-size: 3rem;
 }
 
 .slide img {
@@ -575,11 +594,13 @@ header h1 {
 .slider__btn--left {
   left: 15%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .slider__btn--right {
   right: 15%;
   transform: translate(50%, -50%);
+  z-index: 1;
 }
 
 .dots {
@@ -635,6 +656,9 @@ header h1 {
 }
 
 @media (max-width: 1091px) {
+  .gallery {
+    font-size: 2rem;
+  }
   .slide {
     position: absolute;
     top: -34%;
@@ -662,4 +686,18 @@ header h1 {
     transform: translateX(-50%);
     display: flex;
   }
+}
+
+.yt-video {
+  margin: 50px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.video-container iframe {
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px #acb3c2;
 }
