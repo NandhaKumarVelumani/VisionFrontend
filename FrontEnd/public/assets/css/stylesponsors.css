@@ -97,7 +97,7 @@ header {
   text-align: center;
   font-size: 3em;
   text-transform: capitalize;
-  margin: 10px auto;
+  margin: 10px auto 10px auto;
 }
 
 .sponsor-benefits h2 {
@@ -123,6 +123,12 @@ header {
 
 .content h2 {
   color: #ffd700;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
