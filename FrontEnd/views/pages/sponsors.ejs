@@ -153,25 +153,27 @@
         </div>
       </div>
     </section>
-    <form>
-      <div class="title"><p>Sponsorship details</p></div>
-      <div class="content">
-        <div class="field">
-          <input
-            type="text"
-            placeholder="Sponsor/company name"
-            autocomplete="nope"
-          />
+    <div class="form-container">
+      <form>
+        <div class="title"><p>Sponsorship details</p></div>
+        <div class="content">
+          <div class="field">
+            <input
+              type="text"
+              placeholder="Sponsor/company name"
+              autocomplete="nope"
+            />
+          </div>
+          <div class="field">
+            <input type="email" placeholder="Email" autocomplete="nope" />
+          </div>
+          <div class="field">
+            <textarea placeholder="message..." cols="20" rows="5"></textarea>
+          </div>
+          <button class="field btn" type="submit">Submit</button>
         </div>
-        <div class="field">
-          <input type="email" placeholder="Email" autocomplete="nope" />
-        </div>
-        <div class="field">
-          <textarea placeholder="message..." cols="20" rows="5"></textarea>
-        </div>
-        <button class="field btn" type="submit">Submit</button>
-      </div>
-    </form>
+      </form>
+    </div>
     <section class="footer"><%- include('../partials/footer'); %></section>
   </body>
 </html>
