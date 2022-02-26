@@ -44,7 +44,7 @@ header {
   width: 100vw;
   background-color: transparent;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   height: 300vh;
 }
 
@@ -67,27 +67,35 @@ header {
 }
 
 .sponsors-grid {
-  min-height: 95vh;
+  height: 20vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
+  gap: 1rem;
 }
 
 .sponsors .title {
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
   font-weight: 500;
   color: #ffd700;
 }
 
 .grid-item {
-  background-image: url(../comesoon.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 80%;
   height: 60%;
-  padding: 10px;
+  margin: 1rem;
+}
+
+.grid1 {
+  background-image: url(../images/sponsor-1.jpeg);
+}
+
+.grid2 {
+  background-image: url(../images/sponsor-1.jpeg);
 }
 
 .sponsor-benefits {
@@ -249,7 +257,7 @@ form .title {
   }
   .sponsors-grid {
     grid-template-columns: repeat(2, 1fr);
-    height: 95%;
+    /* height: 95%; */
     animation: slide-up 2s ease-in;
   }
   .grid-item {
@@ -314,6 +322,7 @@ form .title {
     animation: none;
     height: 150vh;
     padding-top: 1rem;
+    height: fit-content;
   }
   .banner {
     animation: none;
@@ -325,7 +334,6 @@ form .title {
   }
   .sponsors-grid {
     grid-template-columns: repeat(1, 1fr);
-    height: 95%;
     animation: slide-up 2s ease-in;
   }
   .grid-item {
