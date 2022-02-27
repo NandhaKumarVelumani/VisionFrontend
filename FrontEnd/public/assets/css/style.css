@@ -323,7 +323,6 @@ header h1 {
   margin: 10px 0;
 }
 
-
 @media (max-width: 500px) {
   .info {
     text-align: center;
@@ -332,7 +331,7 @@ header h1 {
 }
 /* ---web and tech cores--- */
 .pics {
-  color: #ccc;
+  text-align: center;
 }
 .pics h1 {
   text-transform: capitalize;
@@ -360,12 +359,17 @@ header h1 {
 .card img {
   height: 250px;
   border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  object-position: 100% 0;
 }
 .card:hover {
   box-shadow: 3px 6px 10px 0 rgba(0, 0, 0, 0.616);
 }
 .card-container {
   padding: 2px 16px;
+}
+.card-container h4 {
+  color: #dadada;
 }
 @media (max-width: 850px) {
   .cards {
