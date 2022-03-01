@@ -610,7 +610,7 @@ header h1 {
 
 .dots {
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -686,7 +686,7 @@ header h1 {
   }
   .dots {
     position: absolute;
-    bottom: 65%;
+    bottom: 58%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
