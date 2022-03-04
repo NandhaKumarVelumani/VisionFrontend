@@ -18,7 +18,7 @@ nav {
   box-shadow: 10px 5px 5px #222428;
 }
 nav img {
-  width: 50px;
+  width: 40px;
   height: calc(var(--ecea-gold) * width);
 }
 .nav-links {
@@ -55,6 +55,7 @@ nav .fa {
 @media (max-width: 900px) {
   header {
     min-height: 50px;
+    width: 105%;
   }
   .nav-links ul li {
     display: block;
