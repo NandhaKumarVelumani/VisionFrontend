@@ -161,6 +161,7 @@ body {
   font-size: 3em;
   text-transform: capitalize;
   margin: 10px auto;
+  color: #ffd700;
 }
 .tech-events .content,
 .non-tech-events .content {
@@ -172,8 +173,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.poster-content h2 {
+.poster-content h2,
+.poster-content h3 {
   text-transform: capitalize;
+  color: #ffd700;
 }
 .brainstorming,
 .codigo,
