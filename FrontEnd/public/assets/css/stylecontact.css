@@ -105,6 +105,7 @@ section {
 .container .row1 .col1 .inputbox input:focus ~ .line,
 .container .row1 .col1 .inputbox input:valid ~ .line {
   height: 100%;
+  z-index: -1;
 }
 .container .row1 .col1 .inputbox.textarea {
   position: relative;
@@ -115,8 +116,9 @@ section {
 .container .row1 .col1 .inputbox textarea:focus ~ .line,
 .container .row1 .col1 .inputbox textarea:valid ~ .line {
   height: 100%;
+  z-index: -1;
 }
-.container .row1 .col1 input[type="submit"] {
+.container .row1 .col1 .btn {
   border: none;
   border-radius: 5px;
   padding: 10px 40px;
@@ -127,6 +129,7 @@ section {
   font-weight: 500;
   font-size: 15px;
 }
+
 @media (max-width: 768px) {
   .container {
     padding: 0px;
