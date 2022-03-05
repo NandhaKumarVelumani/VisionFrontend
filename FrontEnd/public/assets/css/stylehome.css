@@ -1,0 +1,42 @@
+@import "compass/css3";
+
+.dialog-box_info,
+.dialog-box_error,
+.dialog-box_success,
+.dialog-box_warning {
+  border-radius: 1em;
+  color: #fafafa;
+  margin: 5% auto;
+  max-width: 100vw;
+  padding: 2em;
+  position: relative;
+}
+.dialog-box_info:before,
+.dialog-box_error:before,
+.dialog-box_success:before,
+.dialog-box_warning:before {
+  background: #222;
+  content: attr(data-title);
+  left: 50%;
+  padding: 0 1em;
+  position: absolute;
+  text-transform: uppercase;
+  top: -0.6em;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.dialog-box_info,
+.dialog-box_error,
+.dialog-box_success {
+  border: 0.2em solid #ffd700;
+  box-shadow: inset 0 0 0.4em #ddc32e, 0 0 0.4em #ddc32e;
+}
+.dialog-box_info:before,
+.dialog-box_error:before,
+.dialog-box_success:before {
+  font-size: 1.2em;
+  border-left: 0.2em solid #ffd700;
+  border-right: 0.2em solid #ffd700;
+  color: #c5d1d3;
+  text-shadow: 0 0 0.4em #ddc32e;
+}
