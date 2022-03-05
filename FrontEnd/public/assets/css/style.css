@@ -356,6 +356,10 @@ header h1 {
   color: #acb3c2;
   background-color: rgb(47, 49, 168);
 }
+.card:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.637);
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.5s;
+}
 .card img {
   height: 250px;
   border-radius: 8px 8px 0 0;
