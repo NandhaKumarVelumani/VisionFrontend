@@ -12,6 +12,8 @@
 }
 body {
   background-color: var(--primary-bg-color);
+  background-size: cover;
+  margin: 0;
 }
 .blur {
   filter: blur(5px);
@@ -22,31 +24,79 @@ body {
 }
 
 /* -----navbar----- */
-/* header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  max-height: 70vh;
-  width: 100%;
-} */
-.title h1 {
+/* .title h1 {
   padding-top: 50px;
   text-align: center;
   font-size: 3em;
   color: #eee;
-}
+} */
 .title > img {
   display: flex;
   width: 200px;
   height: 200px;
   margin: 10px auto 50px;
 }
-/* 
-@media (max-width: 900px) {
-  header {
-    min-height: 200px;
+.logo {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  width: 65%;
+  height: 180px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+}
+
+.logo b {
+  font-weight: 400;
+  font-size: 8vw;
+  font-family: "Pacifico", cursive;
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ffd700, 0 0 0.5em #ffd700,
+    0 0 0.1em #ffd700, 0 10px 3px #000;
+}
+.logo b span {
+  animation: blink linear infinite 2s;
+  font-family: "Pacifico", cursive;
+}
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
   }
-} */
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
 
 /* -----container----- */
 .container {
@@ -57,6 +107,7 @@ body {
 
 /* ---Intro--- */
 .intro {
+  margin-top: 200px;
   color: rgb(214, 213, 213);
   text-align: left;
   /* background-color: #222428; */
@@ -79,6 +130,9 @@ body {
 }
 
 @media (max-width: 900px) {
+  .logo b {
+    font-size: 10vw;
+  }
   .intro {
     flex-direction: column;
   }
