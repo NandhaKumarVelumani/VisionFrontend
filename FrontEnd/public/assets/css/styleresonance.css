@@ -152,11 +152,13 @@ body {
 
 /* ---tech-events--- */
 .tech-events,
-.non-tech-events {
+.non-tech-events,
+.workshops {
   color: rgb(214, 213, 213);
 }
 .tech-events h1,
-.non-tech-events h1 {
+.non-tech-events h1,
+.workshops h1 {
   text-align: center;
   font-size: 3em;
   text-transform: capitalize;
@@ -164,7 +166,8 @@ body {
   color: #ffd700;
 }
 .tech-events .content,
-.non-tech-events .content {
+.non-tech-events .content,
+.workshops .content {
   display: flex;
   flex-direction: column;
 }
@@ -182,7 +185,8 @@ body {
 .codigo,
 .run-after,
 .speed-networking,
-.connextions {
+.connextions,
+.AIML {
   display: flex;
   margin: 20px;
 }
@@ -190,7 +194,8 @@ body {
 .innovision,
 .project-display,
 .mind-bogglers,
-.carnival {
+.carnival,
+.matlab {
   display: flex;
   margin: 20px;
   flex-direction: row-reverse;
@@ -200,7 +205,8 @@ body {
 .codigo img,
 .run-after img,
 .speed-networking img,
-.connextions img {
+.connextions img,
+.AIML img {
   height: 300px;
   width: calc(height * var(--event-posters));
   margin: 0 30px 0 0;
@@ -210,7 +216,8 @@ body {
 .innovision img,
 .project-display img,
 .mind-bogglers img,
-.carnival img {
+.carnival img,
+.matlab img {
   height: 300px;
   width: calc(height * var(--event-posters));
   margin: 0 0 0 30px;
@@ -219,7 +226,8 @@ body {
 
 @media (max-width: 900px) {
   .tech-events > .content > div,
-  .non-tech-events > .content > div {
+  .non-tech-events > .content > div,
+  .workshops > .content > div {
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -229,7 +237,8 @@ body {
     margin: 10px auto;
   }
   .tech-events > .content > div img,
-  .non-tech-events > .content > div img {
+  .non-tech-events > .content > div img,
+  .workshops > .content > div img {
     height: 60vw;
     width: calc(height * var(--event-posters));
     margin: auto;
