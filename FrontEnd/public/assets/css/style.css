@@ -21,7 +21,7 @@
 body {
   min-height: auto;
   background: rgb(0, 0, 0);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 header {
   position: sticky;
@@ -195,6 +195,7 @@ header h1 {
 /*operations*/
 .operations-container {
   margin: 4rem auto 0 auto;
+  
 }
 
 .operations-container h1 {
@@ -208,6 +209,7 @@ header h1 {
   font-size: 1rem;
   border-radius: 20px;
   color: white;
+  
 }
 
 .operations__tab-container {
@@ -217,7 +219,9 @@ header h1 {
 
 .operations__tab {
   margin-right: 2.5rem;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
+
+  
 }
 
 .operations__tab span {
@@ -252,12 +256,14 @@ header h1 {
 
   /* JUST PRESENTATIONAL */
   font-size: 1rem;
+  text-align: center;
   padding: 0rem 3rem 2rem 3rem;
   margin-bottom: 3rem;
 }
 
 .operations__content--active {
   display: grid;
+  text-align: center;
   grid-template-columns: 1rem 1fr;
   column-gap: 3rem;
   /* row-gap: 0.5rem; */
@@ -495,7 +501,6 @@ header h1 {
   .operations__content--active {
     display: grid;
     grid-template-columns: 1rem 1fr;
-    column-gap: 3rem;
     /* row-gap: 0.5rem; */
   }
 

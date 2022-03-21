@@ -48,6 +48,11 @@ app.get("/login", function (req, res) {
   res.render("pages/login");
 });
 
+//user-dashboard
+app.get("/userdashboard", function (req, res) {
+  res.render("pages/userdashboard");
+});
+
 //regdetails
 app.get("/regdetails", function (req, res) {
   res.render("pages/DetailsAndRegistration");
