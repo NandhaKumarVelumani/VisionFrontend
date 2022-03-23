@@ -4,6 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
+}
+.logo-container {
+  min-height: 250px;
+  width: 250px;
+  transform: translateY(-50%);
 }
 .texts {
   max-width: 100%;
@@ -22,6 +28,7 @@
   color: #dfbfbf;
   position: relative;
   font-size: 9vw;
+  transform: translateY(-90%);
   /* animation: glitch 5s 5s infinite; */
 }
 .glitch::before,
@@ -305,5 +312,16 @@
     transform: translateX(-10%);
     position: absolute;
     top: 85%;
+  }
+
+  .glitch,
+  .glow {
+    transform: translateY(-200%);
+    text-align: center;
+    left: 5%;
+  }
+
+  .logo-container img {
+    max-width: 18rem;
   }
 }
