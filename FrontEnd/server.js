@@ -34,8 +34,8 @@ app.get("/sponsors", function (req, res) {
 });
 
 // resonance page
-app.get('/resonance', function (req, res) {
-    res.render('pages/resonance');
+app.get("/resonance", function (req, res) {
+  res.render("pages/resonance");
 });
 
 // contact us page
@@ -54,7 +54,7 @@ app.get("/userdashboard", function (req, res) {
 });
 
 //regdetails
-app.get("/regdetails", function (req, res) {
+app.get("/DetailsAndRegistration", function (req, res) {
   res.render("pages/DetailsAndRegistration");
 });
 
