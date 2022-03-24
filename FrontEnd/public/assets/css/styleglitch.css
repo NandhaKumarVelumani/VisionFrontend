@@ -6,16 +6,17 @@
   align-items: center;
   z-index: 100;
 }
-.logo-container {
-  min-height: 250px;
-  width: 250px;
-  transform: translateY(-50%);
+
+.logo-container img {
+  z-index: 10;
+  min-height: 500px;
+  width: 500px;
 }
 .texts {
   max-width: 100%;
   min-height: 100%;
   position: absolute;
-  top: 50%;
+  top: 90%;
   z-index: -100;
 }
 
@@ -322,6 +323,33 @@
   }
 
   .logo-container img {
-    max-width: 18rem;
+    max-width: 500rem;
+    min-height: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .glitch {
+    color: white;
+    font-size: 5rem;
+  }
+  .texts .subtitle {
+    color: white;
+    font-size: 0.7rem;
+    transform: translateX(-10%);
+    position: absolute;
+    top: 65%;
+  }
+
+  .glitch,
+  .glow {
+    transform: translateY(-200%);
+    text-align: center;
+    left: 5%;
+  }
+
+  .logo-container img {
+    max-width: 500rem;
+    min-height: 20rem;
   }
 }
