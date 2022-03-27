@@ -27,8 +27,7 @@ function validateform() {
     let passwordPattern = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
     let name = document.forms['regForm']['Name'].value.trim();
     let college_name = document.forms['regForm']['College Name'].value.trim();
-    let degree = document.forms['regForm']['Degree'].value.trim();
-    let branch = document.forms['regForm']['Branch'].value.trim();
+    let program = document.forms['regForm']['Program'].value.trim();
     let yr_of_study = document.forms['regForm']['Year of study'].value.trim();
     let email_id = document.forms['regForm']['Email Id'].value.trim();
     let userpassword = document.forms['regForm']['User Password'].value.trim();
@@ -48,15 +47,11 @@ function validateform() {
         alert("Enter your Register/Roll Number");
         return false;
     }
-    else if (degree == "") {
-        alert("Degree must be filled");
+    else if (program == "") {
+        alert("Program must be filled");
         return false;
     }
-    else if (branch == "") {
-        alert("Branch must be filled");
-        return false;
-    }
-    else if (parseInt(yr_of_study) > 5 || parseInt(yr_of_study) <= 0 || isNaN(parseInt(yr_of_study))) {
+    else if (parseInt(yr_of_study) > 12 || parseInt(yr_of_study) <= 0 || isNaN(parseInt(yr_of_study))) {
         alert("Enter correct year of study");
         return false;
     }
