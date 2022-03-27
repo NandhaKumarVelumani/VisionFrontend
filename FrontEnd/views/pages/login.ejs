@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration</title>
     <script defer src="../../public/assets/js/login.js"></script>
-    <link rel="stylesheet" href="../../public/assets/css/loginstyle.css">
+    <link rel="stylesheet" href="../../public/assets/css/stylelogin.css">
     <link rel="stylesheet" href="../../public/assets/css/style.css">
     <link rel="stylesheet" href="../../public/assets/css/stylepartials.css">
     <link rel="stylesheet" href="./public/assets/css/stylehome.css" />
@@ -23,24 +23,23 @@
                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
             </div>
             <form name="loginForm" id="login" class="input-group" onsubmit="validateloginform()">
-                <input type="email" name="Email Id" class="input-field" placeholder="Email Id" required>
-                <input type="password" class="input-field" placeholder=" User Password" required>
+                <input type="email" id="login-email" name="Email Id" class="input-field" placeholder="Email Id" required>
+                <input type="password" id="login-password" class="input-field" placeholder=" User Password" required>
                 <button type="submit" class="submit-btn ">Log in</button>
-                <a href="###"><br> Forgot Password?</a>
+                <a href="####"><br> Forgot Password?</a>
             </form>
             <form name="regForm" id="register" class="input-group" onsubmit="validateform()">
-                <input name="Name" type="text" class="input-field" placeholder="Name" required minlength="3" autofocus>
-                <input name="Reg Number" type="text" class="input-field" placeholder="Reg/Roll Number" required>
-                <input name="Degree" type="text" class="input-field" placeholder="Degree" required>
-                <input name="Branch" type="text" class="input-field" placeholder="Branch" required>
-                <input name="Year of study" type="" class="input-field" placeholder="Year of study(in number)" required>
-                <input name="College Name" type="text" class="input-field" placeholder="College Name" required>
-                <input name="Phone Number" type="tel" class="input-field" placeholder="Your 10 digit Phone Number"
-                    required>
-                <input name="Email Id" type="email" class="input-field" placeholder="Email Id" required>
-                <input name="User Password" type="password" class="input-field" placeholder=" User Password" required
+                <input name="Name"  id="signup-name" type="text" class="input-field" placeholder="Name" required minlength="3" autofocus>
+                <input name="Reg Number" id="signup-rollno  type="text" class="input-field" placeholder="Reg/Roll Number" required>
+                <input name="Program" id="signup-prog" type="text" class="input-field" placeholder="Program(Eg: School, BE, ME)" required>
+                <input name="Year of study" id="signup-yos" type="" class="input-field" placeholder="Year of study(in number)" required>
+                <input name="College Name" id="signup-clgname type="text" class="input-field" placeholder="College/School Name" required>
+                <input name="Phone Number" id="signup-phone" type="tel" class="input-field" placeholder="10 digit Phone Number"
+                    required minlength="10">
+                <input name="Email Id" id="signup-email" type="email" class="input-field" placeholder="Email Id" required>
+                <input name="User Password" id="signup-pass" type="password" class="input-field" placeholder=" User Password" required
                     minlength="8">
-                <input name="Confirm Password" type="password" class="input-field" placeholder="Confirm Password"
+                <input name="Confirm Password" id="signup-confirmpass" type="password" class="input-field" placeholder="Confirm Password"
                     required>
                 <button type="submit" class="submit-btn ">Register</button>
             </form>
