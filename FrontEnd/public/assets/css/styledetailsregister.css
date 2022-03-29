@@ -120,6 +120,26 @@ body {
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
+
+.contacts {
+  color: #fff;
+}
+.description {
+  text-align: justify;
+  margin: 0px 100px;
+}
+.description h2 {
+  color: #ffd700;
+  text-align: center;
+}
+.contacts h2 {
+  color: #ffd700;
+  text-align: center;
+}
+.description p {
+  color: #fff;
+
+}
 .content form .user-details {
   display: flex;
   flex-wrap: wrap;
@@ -269,4 +289,17 @@ h2 {
   text-align: center;
   display: inline-block;
   margin: 0 auto;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 670px) {
+  .description {
+  text-align: justify;
+  margin: 0px 10px;
+}
 }
