@@ -23,23 +23,7 @@ body {
   background: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
 }
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  min-height: 10vh;
-  width: 100%;
-  /* background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.9)); */
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-}
-header h1 {
-  padding-top: 50px;
-  text-align: center;
-  font-size: 3em;
-  color: #eee;
-}
+
 .mainarea {
   width: 100%;
   min-height: 100vh;

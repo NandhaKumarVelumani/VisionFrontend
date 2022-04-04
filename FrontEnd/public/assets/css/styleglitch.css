@@ -4,32 +4,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 0;
+  position: relative;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.logo-container {
+  position: relative;
+  text-align: center;
+  z-index: -10;
 }
 
 .logo-container img {
   z-index: 10;
   min-height: 500px;
   width: 500px;
+  z-index: -1;
 }
 .texts {
   max-width: 100%;
   min-height: 100%;
-  position: absolute;
+  position: relative;
   top: 90%;
-  z-index: -100;
+  z-index: -1;
 }
 
 .texts .subtitle {
   color: white;
-  transform: translateX(-10%);
 }
 .glitch,
 .glow {
   color: #dfbfbf;
-  position: relative;
+  position: absolute;
+  left: 10%;
   font-size: 9vw;
-  transform: translateY(-90%);
+  transform: translateY(-110%);
   /* animation: glitch 5s 5s infinite; */
 }
 .glitch::before,
@@ -302,54 +312,38 @@
   }
 }
 
-@media (max-width: 670px) {
-  .glitch {
-    color: white;
-    font-size: 5rem;
+@media (max-width: 1200px) {
+  .logo-container {
+    position: relative;
   }
-  .texts .subtitle {
-    color: white;
-    font-size: 0.7rem;
-    transform: translateX(-10%);
-    position: absolute;
-    top: 85%;
+  .subtitle {
+    font-size: 1rem;
+    left: 0%;
   }
 
   .glitch,
   .glow {
-    transform: translateY(-200%);
+    position: absolute;
+    font-size: 4rem;
     text-align: center;
-    left: 5%;
-  }
-
-  .logo-container img {
-    max-width: 500rem;
-    min-height: 20rem;
+    left: 24%;
   }
 }
 
-@media (max-width: 800px) {
-  .glitch {
-    color: white;
-    font-size: 5rem;
+@media (max-width: 670px) {
+  .logo-container {
+    position: relative;
   }
-  .texts .subtitle {
-    color: white;
-    font-size: 0.7rem;
-    transform: translateX(-10%);
-    position: absolute;
-    top: 65%;
+  .subtitle {
+    font-size: 1rem;
+    left: 0%;
   }
 
   .glitch,
   .glow {
-    transform: translateY(-200%);
+    position: absolute;
+    font-size: 4rem;
     text-align: center;
-    left: 5%;
-  }
-
-  .logo-container img {
-    max-width: 500rem;
-    min-height: 20rem;
+    left: 24%;
   }
 }
