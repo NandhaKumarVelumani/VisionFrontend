@@ -19,24 +19,12 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  min-height: 10vh;
-  width: 100%;
-  /* background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.9)); */
-  background-color: black;
-  background-position: center;
-  background-size: cover;
-}
-
 .container {
   margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  min-height: 90vh;
+  min-height: 100vh;
   max-width: 1440px;
 }
 
@@ -54,52 +42,54 @@ header {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  min-height: 95vh;
+  min-height: 100vh;
   animation: slide-in 1s ease-in;
 }
 
 .sponsors {
   flex: 1.5;
   background-color: transparent;
-  height: 95vh;
+  height: 100vh;
   animation: slide-up 1s ease-in;
   z-index: -100;
 }
 
+.sponsor-category {
+  color: #fff;
+  text-align: center;
+}
+
 .sponsors-grid {
-  height: 20vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
-  gap: 1rem;
+  margin-bottom: 50px;
 }
 
 .sponsors .title {
   text-align: center;
   margin: 1rem 0rem;
-  font-weight: 500;
+  font-weight: 8x00;
   color: #ffd700;
 }
 
 .grid-item {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 70%;
+  height: 50%;
+}
+
+.img-container img {
+  height: 80%;
   width: 80%;
-  height: 60%;
-  margin: 1rem;
-}
-
-.grid1 {
-  background-image: url(../images/sponsor-1.jpeg);
-}
-
-.grid2 {
-  background-image: url(../images/sponsor-1.jpeg);
+  margin-left: 20px;
 }
 
 .sponsor-benefits {
   color: rgb(207, 202, 202);
+}
+
+.grid2{
+  transform: translateY(50%);
 }
 .sponsor-benefits h1 {
   text-align: center;
@@ -260,14 +250,6 @@ form .title {
     /* height: 95%; */
     animation: slide-up 2s ease-in;
   }
-  .grid-item {
-    margin-top: 1rem;
-    /* width: 70%;
-        height: 80%; */
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 
   #particles-js {
     display: none;
@@ -275,39 +257,6 @@ form .title {
 }
 
 @media (max-width: 700px) {
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: fixed;
-    background: linear-gradient(rgba(4, 9, 30, 1), rgba(4, 9, 30, 1));
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 0.75s;
-  }
-  nav .fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-  form {
-    width: 80%;
-    margin-left: 35px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 530px) {
   body {
     margin: 0px;
     padding: 0px;
@@ -320,7 +269,7 @@ form .title {
   }
   .sponsors {
     animation: none;
-    height: 150vh;
+    height: 100vh;
     padding-top: 1rem;
     height: fit-content;
   }
@@ -343,5 +292,72 @@ form .title {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  form {
+    width: 80%;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .img-container img {
+    height: 80%;
+    width: 80%;
+    margin-left: 5.2rem;
+  }
+}
+
+@media (max-width: 530px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .container {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sponsor-category {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .sponsors {
+    animation: none;
+    height: 100vh;
+    padding-top: 1rem;
+    height: fit-content;
+  }
+  .banner {
+    animation: none;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 99vw;
+    animation: slide-in 2s ease-in;
+  }
+  .sponsors-grid {
+    grid-template-columns: repeat(1, 1fr);
+    animation: slide-up 2s ease-in;
+  }
+  .grid-item {
+    margin-top: 1rem;
+    width: 70%;
+    height: 80%;
+  }
+
+  .sponsors .title {
+    text-align: center;
+    margin: 1rem 0rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #ffd700;
+  }
+  .img-container img {
+    height: 80%;
+    width: 80%;
+    margin-left: 2rem;
   }
 }

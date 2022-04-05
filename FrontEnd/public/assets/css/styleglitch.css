@@ -17,9 +17,8 @@
 }
 
 .logo-container img {
-  z-index: 10;
-  min-height: 500px;
-  width: 500px;
+  min-height: 200px;
+  width: 300px;
   z-index: -1;
 }
 .texts {
@@ -37,9 +36,9 @@
 .glow {
   color: #dfbfbf;
   position: absolute;
-  left: 10%;
+  left: -10%;
   font-size: 9vw;
-  transform: translateY(-110%);
+  transform: translateY(-40%);
   /* animation: glitch 5s 5s infinite; */
 }
 .glitch::before,
@@ -317,7 +316,7 @@
     position: relative;
   }
   .subtitle {
-    font-size: 1rem;
+    font-size: .7rem;
     left: 0%;
   }
 
@@ -326,7 +325,7 @@
     position: absolute;
     font-size: 4rem;
     text-align: center;
-    left: 24%;
+    left: 18%;
   }
 }
 
@@ -335,7 +334,7 @@
     position: relative;
   }
   .subtitle {
-    font-size: 1rem;
+    font-size: .7rem;
     left: 0%;
   }
 
@@ -344,6 +343,6 @@
     position: absolute;
     font-size: 4rem;
     text-align: center;
-    left: 24%;
+    left: 18%;
   }
 }
