@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color:black;
+}
+h2{
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background: black;
+
+}
+.wrapper a
+{
+  text-decoration: none;
+
+}
+
+:root {
+  --clr-neon: rgb(20, 67, 255);
+  --clr-bg: hsl(323 21% 16%)
+}
+
+.neons {
+  font-size: 20px;
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Balsamiq Sans", cursive;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 3px solid;
+  background-color: transparent;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  transition: all 0.5s
+}
+
+.neons:hover {
+  background-color: var(--clr-neon);
+  color: #fff
+}
+.img-container {
+  margin-top: 50px;
+  display:flexbox;
+  align-items: center;
+  justify-items: center;
+
+
+
+}
+h2 {
+  color: aliceblue;
+  text-align: center;
+
+}
+.img-container img{
+  width: 50%;
+  align-items: center;
+  margin-left: 400px;
+  justify-content: center;
+}
+.center {
+  margin-top:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid gold; 
+}
+.button {
+  color: #db3eb1;
+  border: 6px solid #db3eb1;
+  border-radius:55px;
+  padding: 15px 25px;
+  font-size: 30px;
+  text-align: center;
+  font-family: tahoma;
+  letter-spacing:5px;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  transition: .5s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  color: black;
+  background-color: #db3eb1;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+}
+@media (max-width: 768px) {
+  .img-container
+  {
+    width:100%;
+    background-color:black;
+  }
+  .img-container img {
+  width: 90%;
+  margin-left: 20px;
+  }
+}
