@@ -60,12 +60,15 @@ h2{
 }
 .img-container {
   margin-top: 50px;
-  display:flexbox;
+  display: -ms-flexbox;
   align-items: center;
   justify-items: center;
 
 
 
+}
+.button a{
+text-decoration: none;
 }
 h2 {
   color: aliceblue;
@@ -75,7 +78,7 @@ h2 {
 .img-container img{
   width: 50%;
   align-items: center;
-  margin-left: 400px;
+  margin-left: 370px;
   justify-content: center;
 }
 .center {
